@@ -69,7 +69,8 @@ def compare_activations(X, y):
 
 
 def main():
-    print("xor")
+    print("XOR")
+    # ostatnia kolumna odpowiada za bias - daje możliwość modyfikacji neuronu poprzez wartość niezalezną od inputu
     X = np.array([[0, 0, 1],
                   [0, 1, 1],
                   [1, 0, 1],
@@ -80,12 +81,12 @@ def main():
 
     compare_activations(X, y)
 
-    print("and")
+    print("AND")
     y = np.array([[0], [0], [0], [1]])
     compare_activations(X, y)
 
-    print("or")
-    y = np.array([[1], [1], [1], [1]])
+    print("OR")
+    y = np.array([[0], [1], [1], [1]])
     compare_activations(X, y)
 
 
