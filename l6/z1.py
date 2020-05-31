@@ -21,7 +21,7 @@ class NeuralNetwork:
         self.weights2 = np.random.rand(1, self.HIDDEN_LAYER_SIZE)
         self.y = y
         self.output = np.zeros(self.y.shape)
-        self.eta = 0.5
+        self.eta = 0.1
         self.activation1, self.activation_derivative1 = activation1
         self.activation2, self.activation_derivative2 = activation2
 
